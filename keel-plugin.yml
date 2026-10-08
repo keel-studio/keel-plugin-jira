@@ -1,0 +1,20 @@
+# The plugin's manifest. Draft: the code still lives in keel-v2, so nothing is released yet.
+# Format: https://github.com/MiladNalbandi/keel-v2/tree/main/docs/plugins/02-plugin-package.md
+schema: 1
+name: jira
+title: "Jira"
+version: 0.0.0
+publisher: keel
+summary: "Bring Jira issues into Tasks and keep their status in step with your flows."
+repo: https://github.com/MiladNalbandi/keel-plugin-jira
+license: MIT
+
+requires:
+  sdk: 1
+  plugins:
+    tasks: ">=0.1.0"
+
+parts:
+  api: { jars: [api/keel-plugin-jira.jar] }
+  web: { entry: web/index.js }
+  migrations: migrations
