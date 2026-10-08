@@ -6,7 +6,7 @@ title: "Jira"
 version: 0.0.0
 publisher: keel
 summary: "Bring Jira issues into Tasks and keep their status in step with your flows."
-repo: https://github.com/MiladNalbandi/keel-plugin-jira
+repo: https://github.com/keel-studio/keel-plugin-jira
 license: MIT
 
 requires:
